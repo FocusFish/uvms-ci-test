@@ -5,7 +5,7 @@
     <parent>
         <groupId>fish.focus.uvms.maven</groupId>
         <artifactId>uvms-pom</artifactId>
-        <version>3.7</version>
+        <version>3.16</version>
         <relativePath />
     </parent>
 
@@ -15,7 +15,7 @@
     <packaging>war</packaging>
     
     <scm>
-        <connection>scm:git@github.com:UnionVMS/uvms-ci-test.git</connection>
+        <connection>scm:git@github.com:FocusFish/uvms-ci-test.git</connection>
         <tag>HEAD</tag>
     </scm>
 
@@ -28,7 +28,7 @@
             <dependency>
                 <groupId>fish.focus.uvms.maven</groupId>
                 <artifactId>uvms-pom-arquillian-deps</artifactId>
-                <version>3.6</version>
+                <version>3.16</version>
                 <type>pom</type>
             </dependency>
         </dependencies>
@@ -50,21 +50,4 @@
         </dependency>
     </dependencies>
     
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.amashchenko.maven.plugin</groupId>
-                <artifactId>gitflow-maven-plugin</artifactId>
-                <version>1.17.0</version>
-                <configuration>
-                    <gitFlowConfig>
-                        <productionBranch>main</productionBranch>
-                        <developmentBranch>develop</developmentBranch>
-                    </gitFlowConfig>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
